@@ -1,7 +1,5 @@
-Visual Clock
-
+#Visual Clock
 Overview
-
 Our Visual Clock leverages the traditional understanding of a clock by using lines around a center point. The line pointing up represents 12 o'clock, the line to the right 3 o'clock, the line pointing down 6 o'clock, and the line to the left 9 o'clock. Unlike regular clocks, our clock does not have hour or minute hands. Instead, it uses visual indicators and light to highlight the current hour and minutes.
 
 Features
