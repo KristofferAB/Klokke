@@ -1,9 +1,190 @@
+/*
+--- 01 Typography system
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+Font weights:
+DEFAULT: 400
+Medium:500
+Semi-bold:600 
+Bold:700
+
+Line heights: 
+DEFAULT: 1
+Small:1.05
+medium: 1.2
+Paragraph default: 1.6
+
+Letter-spacing
+0.5px
+0.75px
+
+
+--- 02 COLOURS
+Primary color: #ff922b
+-Tints: #fff4e6, #ffe8cc
+-Shades: #fd7e14, #e8590c
+-Accents: 
+-Greys: #adb5bd, #495057,
+
+---05 Shadows
+
+---06 Border-radius
+Default:9px;
+Medium: 11px;
+
+--- 07 Whitespace
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+
+/*******************/
+/* General */
+/*******************/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* Percentage of user's browser font-size setting  */
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+
+  background-color: #ffe8cc;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-teriary {
+  font-weight: 700;
+  color: #333;
+  /* color: #45260a; */
+  /* color: #343a40; */
+  letter-spacing: -0.5px;
+}
+.heading-primary {
+  font-size: 5.2rem;
+
+  line-height: 1.05;
+
+  margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.button-link {
+  display: inline-block;
+
+  /* margin: 10px 0; */
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 2.5rem;
+  border-radius: 20px;
+  color: white;
+  background-color: #fd7e14;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: #e8590c;
+}
+.button2-link {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 2.5rem;
+  border-radius: 20px;
+  background-color: #fff;
+  color: #474141;
+  border: none;
+
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button2-link:hover {
+  background-color: #d1d1d1;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
 .container {
   display: flex;
+  /* height: 100vh; */
 }
+
+img {
+  border-radius: 20px;
+}
+
+/*******************/
+/* Navigation */
+/*******************/
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background-color: #ffe8cc;
+  color: #838e98;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1), 0 12px 24px rgba(0, 0, 0, 0.08);
+
+  position: relative; /* Or position: absolute; */
+  z-index: 1;
+}
+.nav-style {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  transition: color 0.3s ease;
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.nav-style:hover {
+  background-color: #e8590c;
+  border-radius: 20px;
+  color: white;
+}
+
+.nav-links {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
 .table1 {
   display: grid;
-  grid-template-columns: repeat(10, 85px); /* Three columns with equal width */
+  grid-template-columns: repeat(10, 40px); /* Three columns with equal width */
   gap: 10px; /* Gap between columns */
   margin-top: 50px;
   margin-right: 100px;
@@ -11,14 +192,14 @@
 
 .table2 {
   display: grid;
-  grid-template-columns: repeat(3, 100px);
+  grid-template-columns: repeat(3, 60px);
   gap: 50px;
   margin-top: 50px;
 }
 
 .column {
   display: grid;
-  grid-auto-rows: minmax(85px, auto); /* Automatically adjust row height */
+  grid-auto-rows: minmax(40px, auto); /* Automatically adjust row height */
   gap: 5px; /* Gap between cells */
 }
 

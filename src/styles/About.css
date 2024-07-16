@@ -1,0 +1,42 @@
+.about-section {
+  display: flex;
+  flex-direction: column;
+}
+.about-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  align-content: center;
+  padding-top: 5rem;
+  text-align: center;
+  width: 80rem;
+}
+.about-text {
+  background-color: aliceblue;
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  max-width: 120rem;
+  margin-bottom: 5rem;
+}
+
+.about-description {
+  font-size: 1.7rem;
+  line-height: 1.6;
+  max-width: 60rem;
+  margin-bottom: 4.8rem;
+}
+
+.heading-secondary2 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 5rem;
+}
