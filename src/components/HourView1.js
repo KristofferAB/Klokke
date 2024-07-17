@@ -20,7 +20,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          10
+          {/* 10 */}
         </div>
 
         <div className=""></div>
@@ -37,7 +37,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          21
+          {/* 21 */}
         </div>
         <div
           className={`cell c95 ${
@@ -52,7 +52,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          21
+          {/* 21 */}
         </div>
 
         <div className=""></div>
@@ -69,7 +69,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          20
+          {/* 20 */}
         </div>
 
         <div className=""></div>
@@ -93,7 +93,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          10
+          {/* 10 */}
         </div>
 
         <div className=""></div>
@@ -110,7 +110,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          21
+          {/* 21 */}
         </div>
         <div
           className={`cell c94 ${
@@ -125,7 +125,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          21
+          {/* 21 */}
         </div>
 
         <div className=""></div>
@@ -142,7 +142,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          20
+          {/* 20 */}
         </div>
 
         <div className=""></div>
@@ -164,7 +164,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          11
+          {/* 11 */}
         </div>
 
         <div
@@ -180,7 +180,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          11
+          {/* 11 */}
         </div>
 
         <div
@@ -198,7 +198,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          10/11
+          {/* 10/11 */}
         </div>
 
         <div className=""></div>
@@ -215,7 +215,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          21
+          {/* 21 */}
         </div>
         <div
           className={`cell c93 ${
@@ -230,7 +230,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          21
+          {/* 21 */}
         </div>
 
         <div className=""></div>
@@ -249,7 +249,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          19/20
+          {/* 19/20 */}
         </div>
         <div
           className={`cell c74 ${
@@ -262,7 +262,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          19
+          {/* 19 */}
         </div>
         <div
           className={`cell c75 ${
@@ -275,7 +275,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          19
+          {/* 19 */}
         </div>
       </div>
 
@@ -299,7 +299,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          10/11
+          {/* 10/11 */}
         </div>
         <div
           className={`cell c92 ${
@@ -314,7 +314,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          21
+          {/* 21 */}
         </div>
         <div
           className={`cell c92 ${
@@ -329,7 +329,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          21
+          {/* 21 */}
         </div>
 
         <div
@@ -347,7 +347,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          19/20
+          {/* 19/20 */}
         </div>
 
         <div className=""></div>
@@ -370,7 +370,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          12
+          {/* 12 */}
         </div>
 
         <div
@@ -386,7 +386,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          12
+          {/* 12 */}
         </div>
 
         <div
@@ -402,7 +402,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          12
+          {/* 12 */}
         </div>
 
         <div
@@ -418,7 +418,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          12
+          {/* 12 */}
         </div>
         <div
           className={`cell c91 c101 c111 c121 ${
@@ -447,7 +447,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          9, 10, 11, 12
+          {/* 9, 10, 11, 12 */}
         </div>
 
         <div
@@ -477,7 +477,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          6,7,8,9
+          {/* 6,7,8,9 */}
         </div>
 
         <div
@@ -493,7 +493,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          06
+          {/* 06 */}
         </div>
         <div
           className={`cell c63 ${
@@ -508,7 +508,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          06
+          {/* 06 */}
         </div>
         <div
           className={`cell c64 ${
@@ -523,7 +523,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          06
+          {/* 06 */}
         </div>
         <div
           className={`cell c65 ${
@@ -538,8 +538,23 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          06
+          {/* 06 */}
         </div>
+      </div>
+
+      {/* ---> COLUMN middle  <--- */}
+      <div className="column middle">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="center"> 0</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
 
       {/* ---> COLUMN 6 <--- */}
@@ -557,7 +572,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          12
+          {/* 12 */}
         </div>
         <div
           className={`cell c124 ${
@@ -572,7 +587,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          12
+          {/* 12 */}
         </div>
         <div
           className={`cell c123 ${
@@ -587,7 +602,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          12
+          {/* 12 */}
         </div>
         <div
           className={`cell c122 ${
@@ -602,7 +617,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          12
+          {/* 12 */}
         </div>
 
         <div
@@ -632,7 +647,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          12, 13,14, 15
+          {/* 12, 13,14, 15 */}
         </div>
         <div
           className={`cell c61 c 31 c41 c51 ${
@@ -661,7 +676,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          15, 16,17,18
+          {/* 15, 16,17,18 */}
         </div>
         <div
           className={`cell c62 ${
@@ -676,7 +691,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          06
+          {/* 06 */}
         </div>
 
         <div
@@ -692,7 +707,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          06
+          {/* 06 */}
         </div>
         <div
           className={`cell c64 ${
@@ -707,7 +722,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          06
+          {/* 06 */}
         </div>
 
         <div
@@ -723,7 +738,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          06
+          {/* 06 */}
         </div>
       </div>
 
@@ -747,7 +762,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          10/11
+          {/* 10/11 */}
         </div>
         <div
           className={`cell c32 ${
@@ -762,7 +777,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          03
+          {/* 03 */}
         </div>
 
         <div
@@ -778,7 +793,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          03
+          {/* 03 */}
         </div>
 
         <div
@@ -796,7 +811,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          04/05
+          {/* 04/05 */}
         </div>
 
         <div className=""></div>
@@ -819,7 +834,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          01
+          {/* 01 */}
         </div>
 
         <div
@@ -835,7 +850,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          01
+          {/* 01 */}
         </div>
 
         <div
@@ -853,7 +868,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          10/11
+          {/* 10/11 */}
         </div>
 
         <div className=""></div>
@@ -870,7 +885,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          03
+          {/* 03 */}
         </div>
         <div
           className={`cell c33 ${
@@ -885,7 +900,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          03
+          {/* 03 */}
         </div>
 
         <div className=""></div>
@@ -904,7 +919,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          04/05
+          {/* 04/05 */}
         </div>
 
         <div
@@ -920,7 +935,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          05
+          {/* 05 */}
         </div>
         <div
           className={`cell c55 ${
@@ -935,7 +950,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          05
+          {/* 05 */}
         </div>
       </div>
       {/* ---> COLUMN 9 <--- */}
@@ -955,7 +970,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          02
+          {/* 02 */}
         </div>
 
         <div className=""></div>
@@ -972,7 +987,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          03
+          {/* 03 */}
         </div>
         <div
           className={`cell c34 ${
@@ -987,7 +1002,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          03
+          {/* 03 */}
         </div>
 
         <div className=""></div>
@@ -1004,7 +1019,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          04
+          {/* 04 */}
         </div>
 
         <div className=""></div>
@@ -1028,7 +1043,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          02
+          {/* 02 */}
         </div>
 
         <div className=""></div>
@@ -1045,7 +1060,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          03
+          {/* 03 */}
         </div>
         <div
           className={`cell c35 ${
@@ -1060,7 +1075,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          03
+          {/* 03 */}
         </div>
 
         <div className=""></div>
@@ -1077,7 +1092,7 @@ function HourView1({ timeComponents }) {
               : "white"
           }`}
         >
-          04
+          {/* 04 */}
         </div>
 
         <div className=""></div>

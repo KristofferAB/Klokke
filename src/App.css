@@ -40,6 +40,20 @@ SPACING SYSTEM (px)
 */
 
 /*******************/
+/* Layout */
+/*******************/
+.row {
+  border-radius: 50px;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.row-number {
+  font-size: 3rem;
+  margin-left: 10px;
+}
+
+/*******************/
 /* General */
 /*******************/
 
@@ -135,6 +149,8 @@ body {
 .container {
   display: flex;
   /* height: 100vh; */
+  align-items: center;
+  justify-content: center;
 }
 
 img {
@@ -184,10 +200,26 @@ nav {
 
 .table1 {
   display: grid;
-  grid-template-columns: repeat(10, 40px); /* Three columns with equal width */
+  grid-template-columns: repeat(11, 40px); /* Three columns with equal width */
   gap: 10px; /* Gap between columns */
   margin-top: 50px;
   margin-right: 100px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.table3 {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  gap: 10px; /* Gap between columns */
+  margin-top: 50px;
+  margin-right: 100px;
+  margin-bottom: 20px;
 }
 
 .table2 {

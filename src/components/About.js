@@ -2,6 +2,7 @@ import React from "react";
 import "../styles/About.css";
 import image1 from "../images/layoutH1.png";
 import image3 from "../images/LayoutM1.png";
+import image2 from "../images/LayoutH2.png";
 
 function About() {
   return (
@@ -46,10 +47,10 @@ function About() {
         <div className="flex-container">
           <div>
             <img
-              src={image1}
+              src={image2}
               alt=" hour 1 layout"
               width="400px"
-              height="400px"
+              height="500px"
             ></img>
           </div>
           <div className="about-description">
@@ -88,16 +89,18 @@ function About() {
         </div>
       </section>
 
-      <section>
-        <h1>Sunset API</h1>
-        <div>
-          <h3>Card1</h3>
-        </div>
-        <div>
-          <h3>Card2</h3>
-        </div>
-        <div>
-          <h3>Card3</h3>
+      <section className="">
+        <h1 className="heading-primary">Other features</h1>
+        <div className="about-box">
+          <div>
+            <h3>Card1</h3>
+          </div>
+          <div>
+            <h3>Card2</h3>
+          </div>
+          <div>
+            <h3>Card3</h3>
+          </div>
         </div>
       </section>
     </>
