@@ -197,13 +197,22 @@ nav {
   align-items: center;
   list-style: none;
 }
+.table {
+  display: grid;
+  grid-template-columns: repeat(6, 40px); /* Three columns with equal width */
+  gap: 10px; /* Gap between columns */
+  margin-top: 50px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+}
 
 .table1 {
   display: grid;
   grid-template-columns: repeat(11, 40px); /* Three columns with equal width */
   gap: 10px; /* Gap between columns */
   margin-top: 50px;
-  margin-right: 100px;
+  margin-right: 50px;
+  margin-bottom: 20px;
 }
 
 .center {
@@ -225,8 +234,9 @@ nav {
 .table2 {
   display: grid;
   grid-template-columns: repeat(3, 60px);
-  gap: 50px;
-  margin-top: 50px;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .column {
@@ -242,6 +252,9 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+}
+.cell1 {
+  text-align: center;
 }
 
 .highlightAM {
@@ -261,4 +274,16 @@ nav {
 }
 .white {
   background-color: white;
+}
+
+.golden {
+  border: 5px dotted gold;
+}
+
+.sunset {
+  border: 5px dotted blue;
+}
+
+.sunrise {
+  border: 5px dotted yellow;
 }

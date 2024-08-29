@@ -1,6 +1,6 @@
 import React from "react";
 
-function HourView1({ timeComponents }) {
+function HourView1({ timeComponents, sunrise, sunset, golden }) {
   return (
     <div className="table1">
       {/* ---> COLUMN 1 <--- */}
@@ -13,6 +13,12 @@ function HourView1({ timeComponents }) {
               ? "highlightAM"
               : (timeComponents.hour === 22) & (timeComponents.tenMinutes >= 50)
               ? "highlightPM"
+              : sunrise && sunrise.hour === 10 && sunrise.tenMinutes === 50
+              ? "sunrise"
+              : sunset && sunset.hour === 10 && sunset.tenMinutes === 50
+              ? "sunset"
+              : golden && golden.hour === 10 && golden.tenMinutes === 50
+              ? "golden"
               : timeComponents.hour === 22
               ? "borderPM"
               : timeComponents.hour === 10
@@ -30,6 +36,12 @@ function HourView1({ timeComponents }) {
               ? "highlightAM"
               : (timeComponents.hour === 21) & (timeComponents.tenMinutes >= 50)
               ? "highlightPM"
+              : sunrise && sunrise.hour === 9 && sunrise.tenMinutes === 50
+              ? "sunrise"
+              : sunset && sunset.hour === 9 && sunset.tenMinutes === 50
+              ? "sunset"
+              : golden && golden.hour === 9 && golden.tenMinutes === 50
+              ? "golden"
               : timeComponents.hour === 21
               ? "borderPM"
               : timeComponents.hour === 9
@@ -45,6 +57,12 @@ function HourView1({ timeComponents }) {
               ? "highlightAM"
               : (timeComponents.hour === 21) & (timeComponents.tenMinutes >= 50)
               ? "highlightPM"
+              : sunrise && sunrise.hour === 9 && sunrise.tenMinutes === 50
+              ? "sunrise"
+              : sunset && sunset.hour === 9 && sunset.tenMinutes === 50
+              ? "sunset"
+              : golden && golden.hour === 9 && golden.tenMinutes === 50
+              ? "golden"
               : timeComponents.hour === 21
               ? "borderPM"
               : timeComponents.hour === 9
@@ -62,6 +80,12 @@ function HourView1({ timeComponents }) {
               ? "highlightAM"
               : (timeComponents.hour === 20) & (timeComponents.tenMinutes >= 50)
               ? "highlightPM"
+              : sunrise && sunrise.hour === 8 && sunrise.tenMinutes === 50
+              ? "sunrise"
+              : sunset && sunset.hour === 8 && sunset.tenMinutes === 50
+              ? "sunset"
+              : golden && golden.hour === 8 && golden.tenMinutes === 50
+              ? "golden"
               : timeComponents.hour === 20
               ? "borderPM"
               : timeComponents.hour === 8
@@ -86,6 +110,12 @@ function HourView1({ timeComponents }) {
               ? "highlightAM"
               : (timeComponents.hour === 22) & (timeComponents.tenMinutes >= 40)
               ? "highlightPM"
+              : sunrise && sunrise.hour === 10 && sunrise.tenMinutes === 40
+              ? "sunrise"
+              : sunset && sunset.hour === 10 && sunset.tenMinutes === 40
+              ? "sunset"
+              : golden && golden.hour === 10 && golden.tenMinutes === 40
+              ? "golden"
               : timeComponents.hour === 22
               ? "borderPM"
               : timeComponents.hour === 10
@@ -242,7 +272,7 @@ function HourView1({ timeComponents }) {
               : (timeComponents.hour === 7 || timeComponents.hour === 8) &
                 (timeComponents.tenMinutes >= 30)
               ? "highlightAM"
-              : timeComponents.hour === 20 || timeComponents === 19
+              : timeComponents.hour === 20 || timeComponents.hour === 19
               ? "borderPM"
               : timeComponents.hour === 8 || timeComponents.hour === 7
               ? "borderAM"
@@ -340,7 +370,7 @@ function HourView1({ timeComponents }) {
               : (timeComponents.hour === 7 || timeComponents.hour === 8) &
                 (timeComponents.tenMinutes >= 20)
               ? "highlightAM"
-              : timeComponents.hour === 20 || timeComponents.hour === 8
+              : timeComponents.hour === 20 || timeComponents.hour === 19
               ? "borderPM"
               : timeComponents.hour === 8 || timeComponents.hour === 7
               ? "borderAM"
@@ -543,7 +573,7 @@ function HourView1({ timeComponents }) {
       </div>
 
       {/* ---> COLUMN middle  <--- */}
-      <div className="column middle">
+      {/* <div className="column middle">
         <div></div>
         <div></div>
         <div></div>
@@ -555,7 +585,7 @@ function HourView1({ timeComponents }) {
         <div></div>
         <div></div>
         <div></div>
-      </div>
+      </div> */}
 
       {/* ---> COLUMN 6 <--- */}
       <div className="column 6">
@@ -668,10 +698,10 @@ function HourView1({ timeComponents }) {
                 timeComponents.hour === 17 ||
                 timeComponents.hour === 18
               ? "borderPM"
-              : timeComponents.hour === 0 ||
-                timeComponents.hour === 1 ||
-                timeComponents.hour === 2 ||
-                timeComponents.hour === 3
+              : timeComponents.hour === 3 ||
+                timeComponents.hour === 4 ||
+                timeComponents.hour === 5 ||
+                timeComponents.hour === 6
               ? "borderAM"
               : "white"
           }`}

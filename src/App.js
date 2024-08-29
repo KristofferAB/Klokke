@@ -4,13 +4,8 @@ import Nav from "./components/Nav";
 import LandingPage from "./components/LandingPage";
 import About from "./components/About";
 import Layout from "./components/Layout";
-
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Routes,
-} from "react-router-dom";
+// import axios from "axios";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   const getCurrentTime = () => {

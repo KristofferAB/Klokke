@@ -1,0 +1,49 @@
+.clock-primary {
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  margin-top: 4rem;
+}
+
+.info-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 1.5rem; */
+}
+
+.layout-buttons {
+  display: flex;
+  gap: 2rem;
+}
+
+.layout-button1 {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 1rem;
+  border-radius: 20px;
+  background-color: #f57e3e;
+}
+
+.layout-button1:disabled,
+.layout-button2:disabled,
+.layout-button1:disabled:hover {
+  background-color: #ffe8cc;
+  color: black;
+  border-color: black;
+}
+
+.layout-button1:hover {
+  background-color: #ed5909;
+}
+
+.button-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-right: 1.2rem;
+}

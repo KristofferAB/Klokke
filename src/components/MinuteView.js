@@ -1,181 +1,73 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function MinuteView({ timeComponents }) {
+  const [isAm, setIsAm] = useState(false);
+
+  const getClassName = (isAm, value, time, pmThreshold = 12) => {
+    if (!isAm && time >= value) {
+      return "highlightPM";
+    }
+    if (isAm && time >= value) {
+      return "highlightAM";
+    }
+    return "white";
+  };
+
+  useEffect(() => {
+    if (timeComponents.hour > 12) {
+      setIsAm(false);
+    } else {
+      setIsAm(true);
+    }
+  }, [timeComponents.hour]);
+
+  const minutes = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+  const tenSecond = [50, 40, 30, 20, 10];
+  const seconds = [9, 8, 7, 6, 5, 4, 3, 2, 1];
+
   return (
     <div className="table2">
       <div className="column c1">
-        <div
-          className={`cell ${
-            timeComponents.lastMinutes >= 9 ? "highlightAM" : "white"
-          }`}
-        >
-          9
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastMinutes >= 8 ? "highlightAM" : "white"
-          }`}
-        >
-          8
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastMinutes >= 7 ? "highlightAM" : "white"
-          }`}
-        >
-          7
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastMinutes >= 6 ? "highlightAM" : "white"
-          }`}
-        >
-          6
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastMinutes >= 5 ? "highlightAM" : "white"
-          }`}
-        >
-          5
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastMinutes >= 4 ? "highlightAM" : "white"
-          }`}
-        >
-          4
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastMinutes >= 3 ? "highlightAM" : "white"
-          }`}
-        >
-          3
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastMinutes >= 2 ? "highlightAM" : "white"
-          }`}
-        >
-          2
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastMinutes >= 1 ? "highlightAM" : "white"
-          }`}
-        >
-          1
-        </div>
-        {/* <div
-              className={`cell ${
-                timeComponents.lastMinutes >= 0 ? "highlightAM" : "white"
-              }`}
-            >
-              0
-            </div> */}
+        {minutes.map((minute) => (
+          <div
+            key={minute}
+            className={`cell ${getClassName(
+              isAm,
+              minute,
+              timeComponents.lastMinutes
+            )}`}
+          >
+            {minute}m
+          </div>
+        ))}
       </div>
       <div className="column c2">
-        <div
-          className={`cell ${
-            timeComponents.tenSeconds >= 50 ? "highlightAM" : "white"
-          }`}
-        >
-          50
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.tenSeconds >= 40 ? "highlightAM" : "white"
-          }`}
-        >
-          40
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.tenSeconds >= 30 ? "highlightAM" : "white"
-          }`}
-        >
-          30
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.tenSeconds >= 20 ? "highlightAM" : "white"
-          }`}
-        >
-          20
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.tenSeconds >= 10 ? "highlightAM" : "white"
-          }`}
-        >
-          10
-        </div>
+        {tenSecond.map((tenSecond) => (
+          <div
+            key={tenSecond}
+            className={`cell ${getClassName(
+              isAm,
+              tenSecond,
+              timeComponents.tenSeconds
+            )}`}
+          >
+            {tenSecond}s
+          </div>
+        ))}
       </div>
       <div className="column c3">
-        <div
-          className={`cell ${
-            timeComponents.lastSecond >= 9 ? "highlightAM" : "white"
-          }`}
-        >
-          9
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastSecond >= 8 ? "highlightAM" : "white"
-          }`}
-        >
-          8
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastSecond >= 7 ? "highlightAM" : "white"
-          }`}
-        >
-          7
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastSecond >= 6 ? "highlightAM" : "white"
-          }`}
-        >
-          6
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastSecond >= 5 ? "highlightAM" : "white"
-          }`}
-        >
-          5
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastSecond >= 4 ? "highlightAM" : "white"
-          }`}
-        >
-          4
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastSecond >= 3 ? "highlightAM" : "white"
-          }`}
-        >
-          3
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastSecond >= 2 ? "highlightAM" : "white"
-          }`}
-        >
-          2
-        </div>
-        <div
-          className={`cell ${
-            timeComponents.lastSecond >= 1 ? "highlightAM" : "white"
-          }`}
-        >
-          1
-        </div>
+        {seconds.map((second) => (
+          <div
+            key={second}
+            className={`cell ${getClassName(
+              isAm,
+              second,
+              timeComponents.lastSecond
+            )}`}
+          >
+            {second}s
+          </div>
+        ))}
       </div>
     </div>
   );

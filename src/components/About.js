@@ -3,6 +3,10 @@ import "../styles/About.css";
 import image1 from "../images/layoutH1.png";
 import image3 from "../images/LayoutM1.png";
 import image2 from "../images/LayoutH2.png";
+// import image4 from "../images/sunrise img.jpg";
+import image5 from "../images/moon1.png";
+import image6 from "../images/sunrise.png";
+import image7 from "../images/sun.png";
 
 function About() {
   return (
@@ -89,17 +93,55 @@ function About() {
         </div>
       </section>
 
-      <section className="">
-        <h1 className="heading-primary">Other features</h1>
-        <div className="about-box">
-          <div>
-            <h3>Card1</h3>
+      <section className="card-section">
+        <h1 className="heading-primary"> API</h1>
+        <p className="card-section-text">
+          The application also utilizes sunrisesunset.io to vizualize in the
+          application when the sun is rising, setting and when it is golden hour
+          in the modern clock.{" "}
+        </p>
+        <div className="card-box">
+          <div className="card">
+            <img
+              src={image6}
+              className="card-img"
+              alt=" sunrise img"
+              width="150px"
+              height="150px"
+            ></img>
+            <h3 className="card-title">Sunrise</h3>
+            <ul className="card-list">
+              <li>Shows when the sun is rising.</li>
+              <li>Uses a sun with clouds icon</li>
+            </ul>
           </div>
-          <div>
-            <h3>Card2</h3>
+          <div className="card">
+            <img
+              className="card-img"
+              src={image5}
+              alt=" moon img"
+              width="150px"
+              height="150px"
+            ></img>
+            <h3 className="card-title">Sunset</h3>
+            <ul className="card-list">
+              <li>Shows when the sun is setting.</li>
+              <li>Moon icon to vizulize sunset.</li>
+            </ul>
           </div>
-          <div>
-            <h3>Card3</h3>
+          <div className="card">
+            <img
+              className="card-img"
+              src={image7}
+              alt=" sun icon "
+              width="150px"
+              height="150px"
+            ></img>
+            <h3 className="card-title">Golden hour</h3>
+            <ul className="card-list">
+              <li>Shows when its golden hour.</li>
+              <li>Sun icon to vizualize golden hour.</li>
+            </ul>
           </div>
         </div>
       </section>
