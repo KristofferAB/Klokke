@@ -14,7 +14,7 @@ function MinuteView({ timeComponents }) {
   };
 
   useEffect(() => {
-    if (timeComponents.hour > 12) {
+    if (timeComponents.hour >= 12) {
       setIsAm(false);
     } else {
       setIsAm(true);

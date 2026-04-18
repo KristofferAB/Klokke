@@ -5,42 +5,21 @@ import MinuteView from "./MinuteView";
 import axios from "axios";
 import "../styles/Layout.css";
 
+const OSLO_COORDINATES = { lat: 59.91273, lng: 10.74609 };
+
 function Layout({ timeComponents }) {
   const [traditional, setTraditional] = useState(true);
-  const [sunData, setSunData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-
-  //coordinates Oslo
-  const lat = 59.91273;
-  const lng = 10.74609;
+  const [sunData, setSunData] = useState(null);
+  const [sunError, setSunError] = useState(false);
 
   useEffect(() => {
-    // Define the function to fetch data
-    const fetchData = async () => {
-      try {
-        const response = await axios.get(
-          `https://api.sunrisesunset.io/json?lat=${lat}&lng=${lng}`
-        );
-        setSunData(response.data.results);
-      } catch (err) {
-        setError(err);
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    // Call the function
-    fetchData();
+    axios
+      .get(
+        `https://api.sunrisesunset.io/json?lat=${OSLO_COORDINATES.lat}&lng=${OSLO_COORDINATES.lng}`
+      )
+      .then((res) => setSunData(res.data.results))
+      .catch(() => setSunError(true));
   }, []);
-
-  if (loading) {
-    return <div>Loading...</div>;
-  }
-
-  if (error) {
-    return <div>Error: {error.message}</div>;
-  }
 
   const toggleTraditional = () => {
     setTraditional(!traditional);
@@ -64,12 +43,17 @@ function Layout({ timeComponents }) {
     };
   };
 
-  const sunriseTime = extractTimeComponents(sunData.sunrise);
-  const sunsetTime = extractTimeComponents(sunData.sunset);
-  const goldenHourTime = extractTimeComponents(sunData.golden_hour);
+  const sunriseTime = sunData ? extractTimeComponents(sunData.sunrise) : null;
+  const sunsetTime = sunData ? extractTimeComponents(sunData.sunset) : null;
+  const goldenHourTime = sunData ? extractTimeComponents(sunData.golden_hour) : null;
 
   return (
     <>
+      {sunError && (
+        <div className="sun-error">
+          Could not load sunrise/sunset data. Sun indicators are unavailable.
+        </div>
+      )}
       <div className="info-box">
         <h1 className="clock-primary">
           Clock style: {traditional ? "Traditional" : "Modern"}
